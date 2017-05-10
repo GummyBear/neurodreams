@@ -1,5 +1,6 @@
-// #neurodreams - project for creating images using a neural network. 
-// Project link: goo.gl/tjDaLi
+// #neurodreams - project for creating images using a neural network.
+
+// Project link: http://neuralnet.idvideo.ru
 // Chose some files for processing, wait a while and get the archive with art.
 // Some examples in my instagram: www.instagram.com/gummybear
 
