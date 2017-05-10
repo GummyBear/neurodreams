@@ -1,0 +1,97 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>#neurodreams</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+
+    <style type="text/css">
+        canvas {
+            border: 2px solid #9b9b9b;
+            margin-top: 10px;
+	    border-radius: 100%;// —войства входой и выходой картинки сети
+        }
+
+        #wrap {
+            width: 580;// Ўирина серого блока
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 0px;
+        }
+
+        #gallery img {
+            width: 195px;
+            height: 195px;
+            display: inline-block;
+        }
+    </style>
+
+    <script src="js/convnet.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/image_regression.js"></script>
+</head>
+
+<body>
+
+
+
+<div id="wrap">
+
+
+    <div style="background-color: #f8f8f8; padding:10px; margin-top: 0px; border-radius: 10px;">
+        <div style="margin: 35 0 0px; text-align: center; overflow: auto; max-height:auto;">
+
+    		<div style="float: center; color: #cccccc">
+        		<input id="f" type="file" 		
+			onclick="buttontp.value = 'press to rendering';buttontp.disabled=0;"
+			multiple/><br>
+			
+    		</div>  
+	
+		<div style="margin: 30 0 0px; color: #787878">
+	    		<p id="p1">AAA</p>
+		</div>
+			
+            <canvas id="canv_original"></canvas>
+
+        </div>
+
+        <div style="margin: 15 0 0px; text-align: center; overflow: auto; max-height:auto;">
+
+		<div style="color: #787878">
+            		<p id="p2">BBB</p>
+		</div>
+
+            <canvas id="canv_net"></canvas>
+
+		<div style="margin: 25 0 0px; color: #787878">
+			<p id="p3">CCC</p>
+		</div>
+
+		<div style="float: center;">
+        		<input id="buttontp" type="submit" disabled value="choose some files" 					
+			onclick="this.value = 'be patient';this.disabled=1;f.disabled=1;reload();"
+			style="width: 180px; height: 21px; margin: 5;"/>
+    		</div>
+         	
+		<div style="margin: 23 0 30px; color: #b9b9c1">	
+			<small>		
+				<p id="p4">After some time you will get archive with art</p>
+			</small>
+		</div>
+
+         </div>
+	
+
+        <div style="clear:both;"></div>
+
+	<!--<textarea id="layerdef" style="width:100%; height:250px;"></textarea>-->
+	
+    </div>
+
+</div>
+
+</body>
+</html>
+
