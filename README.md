@@ -1,5 +1,6 @@
 // #neurodreams - project for creating images using a neural network. 
-// Chose some files for processing, wait a while and get the archive with art. 
+// Project link: goo.gl/tjDaLi
+// Chose some files for processing, wait a while and get the archive with art.
 // Some examples in my instagram: www.instagram.com/gummybear
 
 // Need GPU support (now used only CPU).
